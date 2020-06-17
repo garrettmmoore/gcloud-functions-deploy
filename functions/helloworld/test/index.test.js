@@ -54,17 +54,6 @@ const httpInvocation = (fnUrl, port, body) => {
 };
 
 describe("index.test.js", () => {
-  before(() => {
-    assert(
-      process.env.GCLOUD_PROJECT,
-      `Must set GCLOUD_PROJECT environment variable!`
-    );
-    assert(
-      process.env.GOOGLE_APPLICATION_CREDENTIALS,
-      `Must set GOOGLE_APPLICATION_CREDENTIALS environment variable!`
-    );
-  });
-
   describe("functions_helloworld_get helloGET", () => {
     const PORT = 8081;
     let ffProc;
