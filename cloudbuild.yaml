@@ -1,0 +1,22 @@
+# [START functions_ci_cd_cloud_build]
+steps:
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["install"]
+    dir: "https://github.com/garrettmmoore/gcloud-functions-deploy/functions/helloworld"
+  - name: "gcr.io/cloud-builders/npm"
+    args: ["test"]
+    dir: "https://github.com/garrettmmoore/gcloud-functions-deploy/functions/helloworld"
+  - name: "gcr.io/cloud-builders/gcloud"
+    args:
+      [
+        "functions",
+        "deploy",
+        "helloGET",
+        "--trigger-http",
+        "--runtime",
+        "nodejs12",
+        "--entry-point",
+        "helloGET",
+      ]
+    dir: "https://github.com/garrettmmoore/gcloud-functions-deploy/functions/helloworld"
+# [END functions_ci_cd_cloud_build]
