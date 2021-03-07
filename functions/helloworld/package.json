@@ -21,7 +21,7 @@
     "@google-cloud/cloudbuild": "^2.0.0",
     "@google-cloud/debug-agent": "^5.0.0",
     "escape-html": "^1.0.3",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "supertest": "^4.0.2"
   },
   "devDependencies": {
