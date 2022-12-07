@@ -29,7 +29,7 @@
     "@google-cloud/pubsub": "^3.2.1",
     "@google-cloud/storage": "^5.20.5",
     "child-process-promise": "^2.2.1",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "mocha": "^10.1.0",
     "moment": "^2.29.4",
     "promise-retry": "^1.1.1",
